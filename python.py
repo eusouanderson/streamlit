@@ -1,16 +1,16 @@
 import streamlit as st
 import pandas as pd
-from PIL import Image
-import numpy as np
 pessoas = dict()
 
-st.title('Amigo Secreto 2022')
+st.title('-----')
+st.markdown('Ola ...... ')
+st.header('Ola')
+
 pessoas['nome'] = st.text_input('Digite seu nome')
 
 if not pessoas['nome']:
   st.warning('Por favor insira seu nome!')
-  st.stop()
-st.success('Obrigado!')
+  st.success('Obrigado!')
 
 pessoas['presente'] = st.text_input('Digite qual presente você quer ganhar ')
 pessoas['link'] = st.text_input('Cole aqui um link')
